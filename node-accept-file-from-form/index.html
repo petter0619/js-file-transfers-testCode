@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Download</button>
+
+    <br><br>
+
+    <a href="https://teststorageaccount0619.blob.core.windows.net/report-templates/ProjectRapport90c4137f-4a8f-4810-928d-6fe56b146174.xlsx" download>download</a>
+
+    <script>
+        const btn = document.querySelector("button");
+
+        const url = "https://teststorageaccount0619.blob.core.windows.net/report-templates/ProjectRapport90c4137f-4a8f-4810-928d-6fe56b146174.xlsx";
+
+        btn.addEventListener("click", async () => {
+            const res = await fetch(url);
+            
+            console.log(res);
+        });
+    </script>
+</body>
+</html>

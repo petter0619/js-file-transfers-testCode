@@ -1,0 +1,17 @@
+body {
+    display: grid;
+    justify-content: center;
+}
+
+.uploadForm {
+    display: grid;
+    justify-content: center;
+
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.uploadForm button[type="submit"] {
+    width: max-content;
+}

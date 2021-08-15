@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h2 Hello, #{name || 'world'}!
+    form(action='/multer-single', method='POST', class="uploadForm", enctype="multipart/form-data")
+        input(type='file', name="filetoupload")
+        br
+        button(type='submit') Upload file

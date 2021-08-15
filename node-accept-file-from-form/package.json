@@ -1,0 +1,27 @@
+{
+  "name": "file-uploads-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-multer": "nodemon multer.js",
+    "start-busboy": "nodemon busboy-stream.js",
+    "start-client": "cd spa-file-upload && start npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@azure/storage-blob": "^12.6.0",
+    "connect-busboy": "0.0.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fs-extra": "^10.0.0",
+    "multer": "^1.4.2",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
